@@ -1,9 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
 div.SEARCH{
    position: absolute;
-   width:50%;
-   top:30%;
-   left:30%;
+   width:65%;
+   top:2%;
+   left:20%;
+  
 
 }
 h1.title{
@@ -12,4 +13,15 @@ h1.title{
 }
 button{
   margin-left: 40%;
+}
+div.results{
+  margin: 50px 50px 50px 50px;
+  padding:30px;
+  font-family: 'Anton', sans-serif;
+  border-style: solid;
+  width:fit-content;
+  border-radius:25px;
+  border-color:gray;
+  border-width: 2px;
+
 }
