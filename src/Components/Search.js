@@ -17,11 +17,10 @@ const  Search=(props)=>{
             ' social', ' special', ' strong', ' sure', ' true', ' white', ' whole', ' young  ',]
         
         var text = "";
-      
         //text += possible.charAt(Math.floor(Math.random() * possible.length));
         text = determiner[Math.floor(Math.random() * determiner.length)];
         var res = document.querySelector('input.form-control');
-        res.value = text;
+        text = res.value.length===0?text:res.value;
        const url = `https://youtube.googleapis.com/youtube/v3/search?part=snippet&maxResults=1&q=${text}&regionCode=GB&key=AIzaSyCSY-tbTAsPvUMEXPP32BGENmnG6nl5BzY`; 
       let data = await fetch(url);
         let parsedData = await data.json();
